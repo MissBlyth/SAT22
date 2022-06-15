@@ -16,17 +16,16 @@ fontSub = ("Calibri", 18)
 #body text
 fontBody = ("Calibri", 12)
 
-
+#common interface objects
+#application title
+mainHeading = Label(window, text="Bruno+", font=fontHeading).grid(row=0, column=0)
 
 ###create menu page
 #frame - container for the interface elements
-menuFrame = Frame().pack()
-#heading
-menuLabelHeading = Label(menuFrame, text="Bruno+", font=fontHeading).pack()
-
-
-
-
+menuFrame = Frame(window).grid(row=1,column=0)
+##menu buttons
+menuAddDogDetails = Button(menuFrame, text="Add Dog").grid(row=1,column=0)
+menuEditDogDetails = Button(menuFrame, text="Edit Dog").grid(row=1, column=1)
 
 
 ##############################################################
